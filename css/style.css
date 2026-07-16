@@ -275,6 +275,42 @@ a:hover { color: var(--oro); }
   transform: rotate(168deg);
   opacity: 0.18;
 }
+.hero__fern--siete {
+  left: 1vw;
+  top: -5rem;
+  width: 13vw;
+  max-width: 160px;
+  height: 46%;
+  transform: rotate(22deg);
+  opacity: 0.17;
+}
+.hero__fern--ocho {
+  right: 13vw;
+  top: -6rem;
+  width: 12vw;
+  max-width: 150px;
+  height: 48%;
+  transform: rotate(-14deg);
+  opacity: 0.16;
+}
+.hero__fern--nueve {
+  right: 4vw;
+  top: 24%;
+  width: 11vw;
+  max-width: 140px;
+  height: 34%;
+  transform: rotate(-4deg);
+  opacity: 0.2;
+}
+.hero__fern--diez {
+  left: 16vw;
+  bottom: -7rem;
+  width: 12vw;
+  max-width: 150px;
+  height: 42%;
+  transform: rotate(-150deg);
+  opacity: 0.15;
+}
 
 .hero__content { position: relative; max-width: 40rem; }
 .hero__seal { width: 78px; height: 78px; border-radius: 50%; margin: 0 auto 1.6rem; }
@@ -442,8 +478,49 @@ a:hover { color: var(--oro); }
 
 /* ─── Contacto ─── */
 
-.contacto { background: var(--navy-hondo); color: var(--crema); padding: 7rem 1.5rem; }
-.contacto__inner { max-width: var(--ancho); margin: 0 auto; display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 3.5rem; align-items: center; }
+.contacto { position: relative; overflow: hidden; background: var(--navy-hondo); color: var(--crema); padding: 7rem 1.5rem; }
+/* Botánica alrededor de la ubicación, en los márgenes que deja la reja */
+.contacto__planta {
+  position: absolute;
+  background-color: var(--oro-claro);
+  opacity: 0.2;
+}
+.contacto__planta--uno {
+  left: -4rem;
+  bottom: -7rem;
+  width: 17vw;
+  max-width: 220px;
+  height: 125%;
+  transform: rotate(11deg);
+}
+.contacto__planta--dos {
+  left: 4vw;
+  top: -6rem;
+  width: 12vw;
+  max-width: 155px;
+  height: 80%;
+  transform: rotate(-9deg);
+  opacity: 0.16;
+}
+.contacto__planta--tres {
+  right: -3rem;
+  top: -6rem;
+  width: 15vw;
+  max-width: 190px;
+  height: 115%;
+  transform: rotate(-166deg);
+  opacity: 0.18;
+}
+.contacto__planta--cuatro {
+  right: 9vw;
+  bottom: -8rem;
+  width: 12vw;
+  max-width: 150px;
+  height: 85%;
+  transform: rotate(-172deg);
+  opacity: 0.15;
+}
+.contacto__inner { position: relative; z-index: 1; max-width: var(--ancho); margin: 0 auto; display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 3.5rem; align-items: center; }
 .contacto .titulo { margin-bottom: 2rem; }
 .datos { font-style: normal; display: grid; gap: 1.4rem; margin-bottom: 2.2rem; }
 .dato { display: grid; gap: 0.15rem; }
@@ -491,8 +568,14 @@ a.dato__valor:hover { color: var(--oro-claro); }
   .hero__fern--uno { width: 52vw; left: -5rem; opacity: 0.34; }
   .hero__fern--dos { width: 46vw; right: -6rem; opacity: 0.2; }
   /* en pantalla angosta los secundarios se le enciman al texto */
-  .hero__fern--tres, .hero__fern--cuatro, .hero__fern--seis { display: none; }
+  .hero__fern--tres, .hero__fern--cuatro, .hero__fern--seis,
+  .hero__fern--siete, .hero__fern--ocho, .hero__fern--nueve,
+  .hero__fern--diez { display: none; }
   .hero__fern--cinco { width: 34vw; left: -4rem; bottom: -4rem; opacity: 0.16; }
+
+  .contacto__planta--dos, .contacto__planta--cuatro { display: none; }
+  .contacto__planta--uno { width: 44vw; left: -6rem; opacity: 0.1; }
+  .contacto__planta--tres { width: 40vw; right: -6rem; opacity: 0.09; }
   .hero__seal { width: 62px; height: 62px; margin-bottom: 1.2rem; }
   .hero__label { letter-spacing: 0.18em; gap: 0.5rem; }
   .hero__label::before { width: 18px; }
