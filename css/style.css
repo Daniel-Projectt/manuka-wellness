@@ -113,8 +113,12 @@ a:hover { color: var(--oro); }
 .btn--linea { border: 1px solid rgba(42, 33, 25, 0.3); color: var(--tinta); }
 .btn--linea:hover { border-color: var(--navy); color: var(--navy); transform: translateY(-2px); }
 
-.reveal { opacity: 0; transform: translateY(22px); transition: opacity 0.8s ease, transform 0.8s ease; }
-.reveal.is-visible { opacity: 1; transform: none; }
+/* El contenido es visible por defecto. Solo se esconde para animarlo
+   cuando el JS confirma que puede volver a mostrarlo (.js-anim); así, si
+   el JS falla o lo bloquean, la página se lee igual en vez de quedar en
+   blanco. */
+.js-anim .reveal { opacity: 0; transform: translateY(22px); transition: opacity 0.8s ease, transform 0.8s ease; }
+.js-anim .reveal.is-visible { opacity: 1; transform: none; }
 
 /* ─── Navegación ─── */
 
@@ -488,6 +492,6 @@ a.dato__valor:hover { color: var(--oro-claro); }
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
-  .reveal { opacity: 1; transform: none; transition: none; }
+  .js-anim .reveal { opacity: 1; transform: none; transition: none; }
   .btn { transition: none; }
 }

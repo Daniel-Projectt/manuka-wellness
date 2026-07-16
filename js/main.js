@@ -36,6 +36,9 @@
     });
   }
 
+  // Avisa al respaldo del <head> que el revelado sí va a ocurrir
+  window.__manukaReveal = true;
+
   // Revelado al hacer scroll
   const reveals = document.querySelectorAll(".reveal");
   if ("IntersectionObserver" in window) {
