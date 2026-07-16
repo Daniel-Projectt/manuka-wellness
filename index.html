@@ -3,43 +3,47 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Manuka | Bienestar y Salud Preventiva — Santo Domingo</title>
-  <meta name="description" content="Manuka es un centro de bienestar y salud preventiva en Santo Domingo. Sauna, masaje linfático y terapias de bienestar en un espacio pensado para que tu mente descanse." />
+  <title>Manuka | Salud Preventiva — Santo Domingo</title>
+  <meta name="description" content="Más que un centro de bienestar, somos parte de tu estilo de vida. Sueroterapia, ozonoterapia, detox, drenaje linfático y masajes en Santo Domingo. Sana tu cuerpo." />
 
-  <!-- Open Graph / social link previews -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Manuka | Bienestar y Salud Preventiva — Santo Domingo" />
-  <meta property="og:description" content="Centro de bienestar y salud preventiva en Santo Domingo. Sauna, masaje linfático y terapias de bienestar." />
+  <meta property="og:title" content="Manuka | Salud Preventiva — Santo Domingo" />
+  <meta property="og:description" content="Más que un centro de bienestar, somos parte de tu estilo de vida. Sana tu cuerpo." />
   <meta property="og:url" content="https://daniel-projectt.github.io/manuka-wellness/" />
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Manuka | Bienestar y Salud Preventiva" />
-  <meta name="twitter:description" content="Centro de bienestar y salud preventiva en Santo Domingo." />
+  <meta property="og:image" content="https://daniel-projectt.github.io/manuka-wellness/assets/img/corredor.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Manuka | Salud Preventiva" />
+  <meta name="twitter:description" content="Más que un centro de bienestar, somos parte de tu estilo de vida." />
+  <meta name="twitter:image" content="https://daniel-projectt.github.io/manuka-wellness/assets/img/corredor.jpg" />
 
-  <!-- Google Fonts: Fraunces (display) + Figtree (cuerpo) -->
+  <link rel="preload" as="image" href="assets/img/corredor.webp" type="image/webp" fetchpriority="high" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,340;0,9..144,420;0,9..144,520;1,9..144,340;1,9..144,420&family=Figtree:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Karla:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="css/style.css" />
 
-  <!-- Favicon: gota de miel -->
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M16 3c5 7 9 11.5 9 17a9 9 0 1 1-18 0c0-5.5 4-10 9-17z' fill='%23C98F2E'/%3E%3C/svg%3E" />
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
 
-  <!-- Datos estructurados (SEO local) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "HealthAndBeautyBusiness",
-    "name": "Manuka Bienestar y Salud",
-    "description": "Centro de bienestar y salud preventiva en Santo Domingo: sauna, masaje linfático y terapias de bienestar.",
+    "@type": "MedicalClinic",
+    "name": "Manuka — Salud Preventiva",
+    "description": "Centro de salud preventiva y bienestar integral en Santo Domingo: sueroterapia, ozonoterapia, exosomas, autohemoterapia, colónicos, detox iónico, drenaje linfático, masajes y reflexología podal.",
+    "slogan": "Más que un centro de bienestar, somos parte de tu estilo de vida.",
     "url": "https://daniel-projectt.github.io/manuka-wellness/",
+    "image": "https://daniel-projectt.github.io/manuka-wellness/assets/img/corredor.jpg",
+    "telephone": ["+1-809-373-2805", "+1-829-655-0075"],
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Calle Max Henríquez Ureña 63",
       "addressLocality": "Santo Domingo",
       "addressCountry": "DO"
     },
-    "sameAs": ["https://www.instagram.com/manukard/"]
+    "sameAs": ["https://www.instagram.com/manukard/", "https://www.facebook.com/manukard"]
   }
   </script>
 </head>
@@ -48,17 +52,17 @@
   <!-- ─── NAVEGACIÓN ─── -->
   <nav id="main-nav" class="nav">
     <div class="nav__inner">
-      <a href="#inicio" class="nav__brand">
-        <span class="nav__brand-drop" aria-hidden="true"></span>
-        Manuka
+      <a href="#inicio" class="nav__brand" aria-label="Manuka — inicio">
+        <img src="assets/logo.jpg" alt="" class="nav__seal" width="40" height="40" />
+        <span class="nav__wordmark">Manuka</span>
       </a>
-      <ul class="nav__links" id="nav-links">
+      <ul class="nav__links">
         <li><a href="#filosofia" class="nav__link">Filosofía</a></li>
         <li><a href="#servicios" class="nav__link">Servicios</a></li>
+        <li><a href="#espacio" class="nav__link">El espacio</a></li>
         <li><a href="#visita" class="nav__link">Tu visita</a></li>
-        <li><a href="#preguntas" class="nav__link">Preguntas</a></li>
         <li><a href="#contacto" class="nav__link">Contacto</a></li>
-        <li><a href="https://ig.me/m/manukard" target="_blank" rel="noopener" class="nav__cta">Reserva tu cita</a></li>
+        <li><a href="https://wa.me/18293732805" target="_blank" rel="noopener" class="nav__cta">Agendar</a></li>
       </ul>
       <button class="nav__hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
         <span></span><span></span><span></span>
@@ -66,94 +70,151 @@
     </div>
   </nav>
 
-  <!-- Menú móvil -->
   <div class="nav__overlay" id="nav-overlay">
     <button class="nav__overlay-close" id="overlay-close" aria-label="Cerrar menú">&#x2715;</button>
     <ul class="nav__overlay-links">
       <li><a href="#filosofia" class="nav__overlay-link">Filosofía</a></li>
       <li><a href="#servicios" class="nav__overlay-link">Servicios</a></li>
+      <li><a href="#espacio" class="nav__overlay-link">El espacio</a></li>
       <li><a href="#visita" class="nav__overlay-link">Tu visita</a></li>
-      <li><a href="#preguntas" class="nav__overlay-link">Preguntas</a></li>
       <li><a href="#contacto" class="nav__overlay-link">Contacto</a></li>
-      <li><a href="https://ig.me/m/manukard" target="_blank" rel="noopener" class="nav__overlay-link nav__overlay-cta">Reserva tu cita</a></li>
+      <li><a href="https://wa.me/18293732805" target="_blank" rel="noopener" class="nav__overlay-link nav__overlay-cta">Agendar cita</a></li>
     </ul>
   </div>
 
   <!-- ─── HERO ─── -->
   <header id="inicio" class="hero">
-    <div class="hero__glow" aria-hidden="true"></div>
-    <div class="hero__comb" aria-hidden="true"></div>
-    <div class="hero__content">
-      <p class="eyebrow hero__eyebrow">Bienestar &amp; Salud Preventiva · Santo Domingo</p>
-      <h1 class="hero__title">Cuidarte hoy es la mejor<br /><em>medicina de mañana.</em></h1>
-      <p class="hero__sub">Manuka es un espacio donde la salud se cultiva antes de que haga falta: sauna, masaje linfático y terapias de bienestar en un ambiente que calma la mente desde que entras.</p>
-      <div class="hero__buttons">
-        <a href="https://ig.me/m/manukard" target="_blank" rel="noopener" class="btn btn--miel">Reserva tu cita</a>
-        <a href="#servicios" class="btn btn--outline">Conoce los servicios</a>
+    <div class="hero__panel">
+      <div class="hero__mount">
+        <img src="assets/logo.jpg" alt="Sello de Manuka" class="hero__seal" width="86" height="86" />
+        <p class="label hero__label">Salud preventiva · Santo Domingo</p>
+        <h1 class="hero__title">Sana<br />tu cuerpo</h1>
+        <p class="hero__sub">Más que un centro de bienestar, somos parte de tu estilo de vida.</p>
+        <div class="hero__buttons">
+          <a href="https://wa.me/18293732805" target="_blank" rel="noopener" class="btn btn--navy">Agendar por WhatsApp</a>
+          <a href="#servicios" class="btn btn--linea">Ver terapias</a>
+        </div>
       </div>
-      <p class="hero__breathe">Respira. Ya llegaste.</p>
     </div>
+    <figure class="hero__figure">
+      <picture>
+        <source srcset="assets/img/corredor.webp" type="image/webp" />
+        <img src="assets/img/corredor.jpg" alt="Corredor de Manuka: puertas azul marino, paredes crema y láminas botánicas enmarcadas" class="hero__img" width="720" height="1280" fetchpriority="high" />
+      </picture>
+      <figcaption class="hero__caption">Nuestro corredor · Santo Domingo</figcaption>
+    </figure>
   </header>
 
-  <!-- ─── BANDA DE CONFIANZA ─── -->
-  <section class="trust reveal">
-    <div class="trust__inner">
-      <div class="trust__item">
-        <p class="trust__title">Enfoque preventivo</p>
-        <p class="trust__text">Trabajamos tu bienestar antes de que aparezca el malestar.</p>
-      </div>
-      <div class="trust__item">
-        <p class="trust__title">Atención personal</p>
-        <p class="trust__text">Cada visita se adapta a ti, a tu cuerpo y a tu ritmo.</p>
-      </div>
-      <div class="trust__item">
-        <p class="trust__title">En el corazón de la ciudad</p>
-        <p class="trust__text">Calle Max Henríquez Ureña 63, Santo Domingo.</p>
-      </div>
-    </div>
-  </section>
-
   <!-- ─── FILOSOFÍA ─── -->
-  <section id="filosofia" class="filosofia">
-    <div class="filosofia__inner reveal">
-      <p class="eyebrow">Nuestra filosofía</p>
-      <h2 class="filosofia__title">La salud no se recupera.<br /><em>Se cuida.</em></h2>
-      <p class="filosofia__text">Como la miel de manuka — que la naturaleza convirtió en remedio — creemos que el cuerpo tiene todo para estar bien cuando se le da el cuidado correcto, a tiempo. Por eso nuestro trabajo no empieza cuando algo duele: empieza mucho antes, con hábitos, terapias y pausas que sostienen tu energía todos los días.</p>
-      <p class="filosofia__text">Nuestro espacio está diseñado para eso: entras, y la mente baja el volumen.</p>
+  <section id="filosofia" class="credo">
+    <div class="credo__inner reveal">
+      <p class="label label--oro">La creencia</p>
+      <p class="credo__quote">Creemos en una salud que se cuida <em>desde adentro</em>, y en que la mejor medicina es la prevención.</p>
+      <p class="credo__text">Por eso nuestro trabajo no empieza cuando algo duele. Empieza antes: con terapias que devuelven energía, equilibrio y descanso — reunidas en un mismo lugar, para que cuidarte sea parte de tu rutina y no una urgencia.</p>
+      <p class="credo__sign">Porque cuando te sientes bien por dentro, se nota por fuera.</p>
     </div>
   </section>
 
   <!-- ─── SERVICIOS ─── -->
-  <section id="servicios" class="servicios">
-    <div class="servicios__inner">
-      <div class="servicios__head reveal">
-        <p class="eyebrow">Servicios</p>
-        <h2 class="servicios__title">Terapias que suman salud</h2>
+  <section id="servicios" class="menu">
+    <div class="menu__inner">
+      <div class="menu__head reveal">
+        <p class="label label--oro">Terapias</p>
+        <h2 class="titulo">Todo en un mismo lugar</h2>
+        <p class="menu__intro">Un cuerpo se cuida por dentro y por fuera. Estas son las terapias que reunimos para lograrlo.</p>
       </div>
-      <div class="servicios__grid">
-        <article class="servicio reveal">
-          <div class="servicio__icon" aria-hidden="true">
-            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M16 30c0-4 3-6 3-10s-3-6-3-10M28 30c0-4 3-6 3-10s-3-6-3-10" opacity=".7"/><rect x="8" y="32" width="32" height="8" rx="3"/></svg>
-          </div>
-          <h3 class="servicio__name">Sauna</h3>
-          <p class="servicio__text">Calor que relaja el cuerpo, activa la circulación y ayuda a eliminar lo que el cuerpo ya no necesita. Una pausa que se siente desde la primera sesión.</p>
-        </article>
-        <article class="servicio reveal">
-          <div class="servicio__icon" aria-hidden="true">
-            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 34c6-2 8-8 14-8s8 6 14 8"/><path d="M14 24c4-1.5 6-6 10-6s6 4.5 10 6" opacity=".7"/><path d="M18 14c2-1 4-3 6-3s4 2 6 3" opacity=".4"/></svg>
-          </div>
-          <h3 class="servicio__name">Masaje linfático</h3>
-          <p class="servicio__text">Movimientos suaves y precisos que ayudan a drenar, desinflamar y aligerar el cuerpo. Ideal para retención de líquidos, postoperatorios y bienestar general.</p>
-        </article>
-        <article class="servicio reveal">
-          <div class="servicio__icon" aria-hidden="true">
-            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M24 6c7 9 12 14.5 12 21a12 12 0 1 1-24 0c0-6.5 5-12 12-21z"/><path d="M19 28a5 5 0 0 0 5 5" opacity=".6"/></svg>
-          </div>
-          <h3 class="servicio__name">Terapias de bienestar</h3>
-          <p class="servicio__text">Un menú de cuidados pensado para prevenir: pregúntanos por la terapia ideal para tu momento y tus objetivos de salud.</p>
-        </article>
+
+      <div class="menu__cuerpo">
+        <div class="menu__grupos">
+
+          <article class="grupo reveal">
+            <header class="grupo__head">
+              <h3 class="grupo__name">Terapias intravenosas</h3>
+              <p class="grupo__desc">Nutrición y oxigenación celular, directo a donde el cuerpo lo necesita.</p>
+            </header>
+            <ul class="plata">
+              <li class="plata__item"><span class="plata__nombre">Sueroterapia</span><span class="plata__linea" aria-hidden="true"></span><span class="plata__nota">Vitaminas y minerales por vía IV</span></li>
+              <li class="plata__item"><span class="plata__nombre">Ozonoterapia</span><span class="plata__linea" aria-hidden="true"></span><span class="plata__nota">Oxigenación y respuesta inmune</span></li>
+              <li class="plata__item"><span class="plata__nombre">Exosomas</span><span class="plata__linea" aria-hidden="true"></span><span class="plata__nota">Regeneración celular</span></li>
+              <li class="plata__item"><span class="plata__nombre">Autohemoterapia</span><span class="plata__linea" aria-hidden="true"></span><span class="plata__nota">Estímulo con tu propia sangre</span></li>
+            </ul>
+          </article>
+
+          <article class="grupo reveal">
+            <header class="grupo__head">
+              <h3 class="grupo__name">Detox</h3>
+              <p class="grupo__desc">Aligerar lo que sobra para que el cuerpo vuelva a su ritmo.</p>
+            </header>
+            <ul class="plata">
+              <li class="plata__item"><span class="plata__nombre">Colónicos y enemas</span><span class="plata__linea" aria-hidden="true"></span><span class="plata__nota">Limpieza intestinal</span></li>
+              <li class="plata__item"><span class="plata__nombre">Detox iónico</span><span class="plata__linea" aria-hidden="true"></span><span class="plata__nota">A través de los pies</span></li>
+              <li class="plata__item"><span class="plata__nombre">Sauna</span><span class="plata__linea" aria-hidden="true"></span><span class="plata__nota">Calor, circulación y descanso</span></li>
+            </ul>
+          </article>
+
+          <article class="grupo reveal">
+            <header class="grupo__head">
+              <h3 class="grupo__name">Cuerpo y descanso</h3>
+              <p class="grupo__desc">Manos que liberan la tensión que cargas sin darte cuenta.</p>
+            </header>
+            <ul class="plata">
+              <li class="plata__item"><span class="plata__nombre">Drenaje linfático</span><span class="plata__linea" aria-hidden="true"></span><span class="plata__nota">Desinflama y aligera</span></li>
+              <li class="plata__item"><span class="plata__nombre">Masaje terapéutico</span><span class="plata__linea" aria-hidden="true"></span><span class="plata__nota">Alivia tensión muscular</span></li>
+              <li class="plata__item"><span class="plata__nombre">Reflexología podal</span><span class="plata__linea" aria-hidden="true"></span><span class="plata__nota">Relajación profunda</span></li>
+            </ul>
+          </article>
+
+        </div>
+
+        <figure class="menu__figura reveal">
+          <picture>
+            <source srcset="assets/img/herbario.webp" type="image/webp" />
+            <img src="assets/img/herbario.jpg" alt="Sala de tratamiento de Manuka con láminas de herbario enmarcadas sobre la camilla" loading="lazy" width="720" height="1280" />
+          </picture>
+          <figcaption>Sala de tratamiento</figcaption>
+        </figure>
       </div>
-      <p class="servicios__note reveal">¿No sabes por dónde empezar? <a href="https://ig.me/m/manukard" target="_blank" rel="noopener">Escríbenos</a> y te orientamos sin compromiso.</p>
+
+      <p class="menu__nota reveal">¿No sabes cuál te toca? <a href="https://wa.me/18293732805" target="_blank" rel="noopener">Escríbenos</a> y te orientamos.</p>
+    </div>
+  </section>
+
+  <!-- ─── EL ESPACIO ─── -->
+  <section id="espacio" class="espacio">
+    <div class="espacio__head reveal">
+      <p class="label label--oro">El espacio</p>
+      <h2 class="titulo">Entras, y la mente baja el volumen</h2>
+      <p class="espacio__intro">Puertas azul marino, paredes crema, botánica en cada pared. Un lugar que no se siente a consultorio.</p>
+    </div>
+    <div class="espacio__tira reveal">
+      <figure class="lamina">
+        <picture>
+          <source srcset="assets/img/recepcion.webp" type="image/webp" />
+          <img src="assets/img/recepcion.jpg" alt="Recepción de Manuka con mural botánico y puerta azul marino" loading="lazy" width="720" height="1280" />
+        </picture>
+        <figcaption><span class="lamina__num">i</span> La recepción</figcaption>
+      </figure>
+      <figure class="lamina">
+        <picture>
+          <source srcset="assets/img/mural.webp" type="image/webp" />
+          <img src="assets/img/mural.jpg" alt="Sala de espera con mural botánico y sillón de cuero verde azulado" loading="lazy" width="720" height="1280" />
+        </picture>
+        <figcaption><span class="lamina__num">ii</span> La sala de espera</figcaption>
+      </figure>
+      <figure class="lamina">
+        <picture>
+          <source srcset="assets/img/herbario.webp" type="image/webp" />
+          <img src="assets/img/herbario.jpg" alt="Camilla de Manuka bajo dos láminas de flores prensadas" loading="lazy" width="720" height="1280" />
+        </picture>
+        <figcaption><span class="lamina__num">iii</span> La sala de terapia</figcaption>
+      </figure>
+      <figure class="lamina">
+        <picture>
+          <source srcset="assets/img/corredor.webp" type="image/webp" />
+          <img src="assets/img/corredor.jpg" alt="Corredor con puertas azul marino y láminas botánicas" loading="lazy" width="720" height="1280" />
+        </picture>
+        <figcaption><span class="lamina__num">iv</span> El corredor</figcaption>
+      </figure>
     </div>
   </section>
 
@@ -161,76 +222,52 @@
   <section id="visita" class="visita">
     <div class="visita__inner">
       <div class="visita__head reveal">
-        <p class="eyebrow eyebrow--claro">Tu visita</p>
-        <h2 class="visita__title">Así de simple</h2>
+        <p class="label label--oro">Tu visita</p>
+        <h2 class="titulo titulo--claro">Así de simple</h2>
       </div>
-      <ol class="visita__steps">
-        <li class="visita__step reveal">
-          <span class="visita__num" aria-hidden="true">1</span>
-          <h3 class="visita__step-title">Reserva</h3>
-          <p class="visita__step-text">Escríbenos por Instagram y coordinamos el día y la hora que mejor te queden.</p>
+      <ol class="pasos">
+        <li class="paso reveal">
+          <span class="paso__num" aria-hidden="true">1</span>
+          <h3 class="paso__title">Escríbenos</h3>
+          <p class="paso__text">Por WhatsApp o Instagram. Coordinamos el día y la hora que mejor te queden.</p>
         </li>
-        <li class="visita__step reveal">
-          <span class="visita__num" aria-hidden="true">2</span>
-          <h3 class="visita__step-title">Conversamos</h3>
-          <p class="visita__step-text">Antes de empezar escuchamos cómo estás y qué buscas, para adaptar la sesión a ti.</p>
+        <li class="paso reveal">
+          <span class="paso__num" aria-hidden="true">2</span>
+          <h3 class="paso__title">Conversamos</h3>
+          <p class="paso__text">Antes de empezar escuchamos cómo estás y qué buscas, para elegir contigo la terapia correcta.</p>
         </li>
-        <li class="visita__step reveal">
-          <span class="visita__num" aria-hidden="true">3</span>
-          <h3 class="visita__step-title">Te cuidamos</h3>
-          <p class="visita__step-text">Disfrutas tu terapia y sales con recomendaciones para sostener el bienestar en casa.</p>
+        <li class="paso reveal">
+          <span class="paso__num" aria-hidden="true">3</span>
+          <h3 class="paso__title">Te cuidamos</h3>
+          <p class="paso__text">Recibes tu terapia y sales con recomendaciones para sostener el bienestar en casa.</p>
         </li>
       </ol>
     </div>
   </section>
 
-  <!-- ─── BENEFICIOS ─── -->
-  <section class="beneficios">
-    <div class="beneficios__inner reveal">
-      <p class="eyebrow">¿Por qué prevenir?</p>
-      <h2 class="beneficios__title">Pequeñas pausas, grandes resultados</h2>
-      <ul class="beneficios__list">
-        <li class="beneficio"><strong>Menos estrés acumulado.</strong> El descanso profundo y regular baja la tensión antes de que se vuelva síntoma.</li>
-        <li class="beneficio"><strong>Mejor circulación y drenaje.</strong> El sauna y el masaje linfático ayudan al cuerpo a moverse y limpiarse mejor.</li>
-        <li class="beneficio"><strong>Más energía sostenida.</strong> Cuidarte con constancia se nota en el ánimo, el sueño y el día a día.</li>
-        <li class="beneficio"><strong>Un hábito que te acompaña.</strong> La prevención no es un evento: es una rutina amable que construyes con nosotros.</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- ─── INSTAGRAM ─── -->
-  <section class="instagram reveal">
-    <div class="instagram__inner">
-      <p class="eyebrow eyebrow--claro">Comunidad</p>
-      <h2 class="instagram__title">Acompáñanos en el día a día</h2>
-      <p class="instagram__text">Consejos de salud preventiva, el espacio y nuestras terapias — todo en nuestro Instagram.</p>
-      <a href="https://www.instagram.com/manukard/" target="_blank" rel="noopener" class="btn btn--miel">Síguenos: @manukard</a>
-    </div>
-  </section>
-
-  <!-- ─── PREGUNTAS FRECUENTES ─── -->
-  <section id="preguntas" class="faq">
+  <!-- ─── PREGUNTAS ─── -->
+  <section class="faq">
     <div class="faq__inner">
       <div class="faq__head reveal">
-        <p class="eyebrow">Preguntas frecuentes</p>
-        <h2 class="faq__title">Antes de tu primera visita</h2>
+        <p class="label label--oro">Preguntas frecuentes</p>
+        <h2 class="titulo">Antes de tu primera visita</h2>
       </div>
       <div class="faq__list reveal">
         <details class="faq__item">
-          <summary class="faq__q">¿Necesito una condición específica para venir?</summary>
-          <p class="faq__a">No. Manuka es un centro de salud preventiva: la mayoría de nuestros clientes vienen a cuidarse y a descansar, no a tratar un problema. Si tienes alguna condición, cuéntanosla al reservar para adaptar la sesión.</p>
+          <summary class="faq__q">¿Necesito tener algo para venir?</summary>
+          <div class="faq__a"><p>No. Manuka es un centro de salud preventiva: la mayoría viene a cuidarse y a descansar, no a tratar un problema. Si tienes alguna condición, cuéntanosla al agendar para adaptar la sesión.</p></div>
         </details>
         <details class="faq__item">
-          <summary class="faq__q">¿Cómo reservo una cita?</summary>
-          <p class="faq__a">Escríbenos por mensaje directo en Instagram (<a href="https://ig.me/m/manukard" target="_blank" rel="noopener">@manukard</a>) y coordinamos fecha, hora y terapia.</p>
+          <summary class="faq__q">¿Cómo agendo una cita?</summary>
+          <div class="faq__a"><p>Por WhatsApp al <a href="https://wa.me/18293732805" target="_blank" rel="noopener">829.655.0075</a>, por teléfono al <a href="tel:+18093732805">809.373.2805</a>, o por mensaje directo en <a href="https://ig.me/m/manukard" target="_blank" rel="noopener">Instagram</a>.</p></div>
+        </details>
+        <details class="faq__item">
+          <summary class="faq__q">¿Cuál terapia me conviene?</summary>
+          <div class="faq__a"><p>Depende de cómo estás y qué buscas. Escríbenos y te orientamos sin compromiso antes de que reserves nada.</p></div>
         </details>
         <details class="faq__item">
           <summary class="faq__q">¿Qué debo llevar?</summary>
-          <p class="faq__a">Solo ropa cómoda y ganas de desconectar. Nosotros nos encargamos del resto.</p>
-        </details>
-        <details class="faq__item">
-          <summary class="faq__q">¿Dónde están ubicados?</summary>
-          <p class="faq__a">En la Calle Max Henríquez Ureña 63, Santo Domingo. Encuentra el mapa en la sección de contacto.</p>
+          <div class="faq__a"><p>Ropa cómoda y ganas de desconectar. Del resto nos encargamos nosotros.</p></div>
         </details>
       </div>
     </div>
@@ -240,14 +277,27 @@
   <section id="contacto" class="contacto">
     <div class="contacto__inner">
       <div class="contacto__info reveal">
-        <p class="eyebrow eyebrow--claro">Contacto</p>
-        <h2 class="contacto__title">Te esperamos</h2>
-        <address class="contacto__lineas">
-          <p><span class="contacto__label">Dirección</span>Calle Max Henríquez Ureña 63,<br />Santo Domingo, República Dominicana</p>
-          <p><span class="contacto__label">Reservas</span><a href="https://ig.me/m/manukard" target="_blank" rel="noopener">Mensaje directo en Instagram</a></p>
-          <p><span class="contacto__label">Instagram</span><a href="https://www.instagram.com/manukard/" target="_blank" rel="noopener">@manukard</a></p>
+        <p class="label label--oro">Contacto</p>
+        <h2 class="titulo titulo--claro">Te esperamos</h2>
+        <address class="datos">
+          <p class="dato">
+            <span class="dato__label">WhatsApp</span>
+            <a href="https://wa.me/18296550075" target="_blank" rel="noopener" class="dato__valor">829.655.0075</a>
+          </p>
+          <p class="dato">
+            <span class="dato__label">Teléfono</span>
+            <a href="tel:+18093732805" class="dato__valor">809.373.2805</a>
+          </p>
+          <p class="dato">
+            <span class="dato__label">Dirección</span>
+            <span class="dato__valor">Calle Max Henríquez Ureña 63<br />Santo Domingo, R.D.</span>
+          </p>
+          <p class="dato">
+            <span class="dato__label">Instagram</span>
+            <a href="https://www.instagram.com/manukard/" target="_blank" rel="noopener" class="dato__valor">@manukard</a>
+          </p>
         </address>
-        <a href="https://ig.me/m/manukard" target="_blank" rel="noopener" class="btn btn--miel">Reserva tu cita</a>
+        <a href="https://wa.me/18296550075" target="_blank" rel="noopener" class="btn btn--oro">Agendar por WhatsApp</a>
       </div>
       <div class="contacto__mapa reveal">
         <iframe
@@ -263,11 +313,15 @@
   <!-- ─── FOOTER ─── -->
   <footer class="footer">
     <div class="footer__inner">
-      <p class="footer__brand">Manuka <span class="footer__dot" aria-hidden="true">·</span> Bienestar y Salud Preventiva</p>
-      <p class="footer__meta">Calle Max Henríquez Ureña 63, Santo Domingo · <a href="https://www.instagram.com/manukard/" target="_blank" rel="noopener">@manukard</a></p>
+      <img src="assets/logo.jpg" alt="" class="footer__seal" width="56" height="56" loading="lazy" />
+      <p class="footer__tagline">Más que un centro de bienestar,<br />somos parte de tu estilo de vida.</p>
+      <p class="footer__meta">Calle Max Henríquez Ureña 63, Santo Domingo · <a href="tel:+18093732805">809.373.2805</a> · <a href="https://www.instagram.com/manukard/" target="_blank" rel="noopener">@manukard</a></p>
       <p class="footer__copy">© <span id="year">2026</span> Manuka. Todos los derechos reservados.</p>
     </div>
   </footer>
+
+  <!-- CTA fija en móvil -->
+  <a href="https://wa.me/18296550075" target="_blank" rel="noopener" class="cta-fija">Agendar por WhatsApp</a>
 
   <script src="js/main.js" defer></script>
 </body>
