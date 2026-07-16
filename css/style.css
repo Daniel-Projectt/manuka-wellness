@@ -44,11 +44,12 @@ a:hover { color: var(--oro); }
 
 /* ─── El espécimen: helecho dibujado, usado como máscara ─── */
 
-.hero__fern, .menu__fern, .espacio__fern {
+/* Tres especímenes, como en sus paredes: helecho, aciano y hoja ancha.
+   Dibujados en scripts/botanicals.py y usados como máscara, así el color
+   sale del CSS. */
+.botanica {
   display: block;
   background-color: var(--oro);
-  -webkit-mask-image: url("../assets/fern.svg");
-  mask-image: url("../assets/fern.svg");
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
   -webkit-mask-position: center;
@@ -56,6 +57,18 @@ a:hover { color: var(--oro); }
   -webkit-mask-size: contain;
   mask-size: contain;
   pointer-events: none;
+}
+.botanica--helecho {
+  -webkit-mask-image: url("../assets/fern.svg");
+  mask-image: url("../assets/fern.svg");
+}
+.botanica--flor {
+  -webkit-mask-image: url("../assets/flor.svg");
+  mask-image: url("../assets/flor.svg");
+}
+.botanica--hoja {
+  -webkit-mask-image: url("../assets/hoja.svg");
+  mask-image: url("../assets/hoja.svg");
 }
 
 /* El helecho solo se usa en grande: a tamaño pequeño se vuelve una
@@ -205,11 +218,10 @@ a:hover { color: var(--oro); }
   border: 1px solid rgba(199, 154, 46, 0.4);
   pointer-events: none;
 }
-/* los especímenes montados a cada lado */
-.hero__fern {
-  position: absolute;
-  opacity: 0.5;
-}
+/* Los especímenes montados alrededor del texto. Los dos principales
+   anclan las esquinas; el resto rellena en capas más tenues, como el
+   mural de la recepción. */
+.hero__fern { position: absolute; opacity: 0.5; }
 .hero__fern--uno {
   left: -3.5rem;
   bottom: -3rem;
@@ -219,13 +231,49 @@ a:hover { color: var(--oro); }
   transform: rotate(-9deg);
 }
 .hero__fern--dos {
-  right: -4.5rem;
-  top: -5rem;
-  width: 26vw;
-  max-width: 330px;
-  height: 84%;
-  transform: rotate(190deg);
-  opacity: 0.32;
+  right: -3rem;
+  top: -2.5rem;
+  width: 27vw;
+  max-width: 340px;
+  height: 92%;
+  transform: rotate(8deg);
+  opacity: 0.34;
+}
+.hero__fern--tres {
+  left: 9vw;
+  top: -4rem;
+  width: 15vw;
+  max-width: 185px;
+  height: 52%;
+  transform: rotate(-15deg);
+  opacity: 0.26;
+}
+.hero__fern--cuatro {
+  right: 11vw;
+  bottom: -5rem;
+  width: 16vw;
+  max-width: 200px;
+  height: 56%;
+  transform: rotate(-160deg);
+  opacity: 0.2;
+}
+.hero__fern--cinco {
+  left: 3vw;
+  bottom: -6rem;
+  width: 13vw;
+  max-width: 165px;
+  height: 44%;
+  transform: rotate(11deg);
+  opacity: 0.22;
+}
+.hero__fern--seis {
+  right: 2vw;
+  bottom: -4rem;
+  width: 14vw;
+  max-width: 175px;
+  height: 50%;
+  transform: rotate(168deg);
+  opacity: 0.18;
 }
 
 .hero__content { position: relative; max-width: 40rem; }
@@ -308,7 +356,7 @@ a:hover { color: var(--oro); }
   border: 1px solid rgba(199, 154, 46, 0.45);
   background: rgba(245, 235, 221, 0.4);
 }
-.menu__fern { width: 100%; height: 520px; opacity: 0.55; }
+.menu__fern { width: 100%; height: 520px; opacity: 0.6; }
 .menu__nota { margin-top: 3rem; text-align: center; font-size: 0.95rem; color: var(--tinta-suave); }
 
 /* ─── El espacio ─── */
@@ -442,6 +490,9 @@ a.dato__valor:hover { color: var(--oro-claro); }
   .hero__mount { inset: 0.7rem; }
   .hero__fern--uno { width: 52vw; left: -5rem; opacity: 0.34; }
   .hero__fern--dos { width: 46vw; right: -6rem; opacity: 0.2; }
+  /* en pantalla angosta los secundarios se le enciman al texto */
+  .hero__fern--tres, .hero__fern--cuatro, .hero__fern--seis { display: none; }
+  .hero__fern--cinco { width: 34vw; left: -4rem; bottom: -4rem; opacity: 0.16; }
   .hero__seal { width: 62px; height: 62px; margin-bottom: 1.2rem; }
   .hero__label { letter-spacing: 0.18em; gap: 0.5rem; }
   .hero__label::before { width: 18px; }

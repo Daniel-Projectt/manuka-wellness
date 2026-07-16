@@ -93,8 +93,14 @@
   <!-- ─── HERO: una lámina de herbario ─── -->
   <header id="inicio" class="hero">
     <div class="hero__mount" aria-hidden="true"></div>
-    <span class="hero__fern hero__fern--uno" aria-hidden="true"></span>
-    <span class="hero__fern hero__fern--dos" aria-hidden="true"></span>
+    <!-- Especímenes montados en la lámina. Enmarcan el texto sin invadirlo;
+         los secundarios se retiran en pantallas chicas. -->
+    <span class="hero__fern hero__fern--uno botanica botanica--helecho" aria-hidden="true"></span>
+    <span class="hero__fern hero__fern--dos botanica botanica--hoja" aria-hidden="true"></span>
+    <span class="hero__fern hero__fern--tres botanica botanica--flor" aria-hidden="true"></span>
+    <span class="hero__fern hero__fern--cuatro botanica botanica--hoja" aria-hidden="true"></span>
+    <span class="hero__fern hero__fern--cinco botanica botanica--flor" aria-hidden="true"></span>
+    <span class="hero__fern hero__fern--seis botanica botanica--helecho" aria-hidden="true"></span>
     <div class="hero__content">
       <img src="assets/logo.jpg" alt="Sello de Manuka" class="hero__seal" width="78" height="78" />
       <p class="label hero__label">Salud preventiva · Santo Domingo</p>
@@ -170,7 +176,7 @@
         </div>
 
         <div class="menu__lamina reveal" aria-hidden="true">
-          <span class="menu__fern"></span>
+          <span class="menu__fern botanica botanica--flor"></span>
         </div>
       </div>
 
@@ -180,7 +186,7 @@
 
   <!-- ─── EL ESPACIO ─── -->
   <section id="espacio" class="espacio">
-    <span class="espacio__fern" aria-hidden="true"></span>
+    <span class="espacio__fern botanica botanica--helecho" aria-hidden="true"></span>
     <div class="espacio__inner reveal">
       <p class="label label--claro">El espacio</p>
       <h2 class="titulo titulo--claro">Entras, y la mente<br />baja el volumen</h2>

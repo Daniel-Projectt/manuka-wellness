@@ -17,16 +17,25 @@ Todo salió de la marca real, no de una plantilla:
 
 - **Tipografía:** Marcellus (capitales romanas, como el wordmark del logo) + Karla.
 - **Logo:** el real, tomado del perfil de Instagram.
-- **Fotos:** frames del reel del propio centro ([C53ezITrDgc](https://www.instagram.com/reel/C53ezITrDgc/)).
+- **Sin fotos, a propósito.** Las únicas imágenes del espacio que existen públicas
+  son frames borrosos de un reel; montar el sitio sobre eso lo hacía ver barato.
+  En su lugar la página es una **lámina de herbario** — que es literalmente lo que
+  cuelga de sus paredes: flores prensadas enmarcadas. Los especímenes (`assets/fern.svg`, `flor.svg`, `hoja.svg`)
+  están generados con `scripts/botanicals.py` y se usan como máscara CSS, así que se colorean
+  desde el CSS y pesan 8 KB o menos cada uno.
 
 ## Stack
 
-HTML + CSS + JS puro, sin dependencias ni build. Imágenes en WebP con fallback JPEG.
+HTML + CSS + JS puro, sin dependencias ni build. Todo el sitio pesa ~100 KB.
 
 - `index.html` — una página, secciones ancladas
 - `css/style.css` — identidad visual completa
 - `js/main.js` — nav, menú móvil, revelado al scroll, CTA fija de móvil
-- `assets/` — logo, favicons y fotos del espacio
+- `scripts/botanicals.py` — dibuja los tres especímenes (helecho, aciano, hoja ancha)
+- `assets/` — logo, favicons, láminas botánicas
+
+El contenido es visible por defecto: el revelado al scroll solo se activa si el JS
+arranca, y hay un respaldo de 3 s. Si el JS falla, la página se lee igual.
 
 ## Datos usados (verificados en su Instagram, 16-jul-2026)
 
